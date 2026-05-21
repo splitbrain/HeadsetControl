@@ -48,6 +48,7 @@
 
 // Sony devices
 #include "devices/sony_inzone_buds.hpp"
+#include "devices/sony_inzone_h5.hpp"
 
 // Test device
 #include "devices/headsetcontrol_test.hpp"
@@ -138,6 +139,7 @@ void DeviceRegistry::initialize()
 
         // Sony devices
         registerDevice(std::make_unique<SonyINZONEBuds>());
+        registerDevice(std::make_unique<SonyINZONEH5>());
 
         // Test device
         registerDevice(std::make_unique<HeadsetControlTest>());
